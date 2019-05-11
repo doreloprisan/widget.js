@@ -101,14 +101,14 @@
                 }, 700);
             });
 
-        if (!whitelabel) {
-            var brand = $('<a href="https://www.mammamiapizzeria.ro/#contacteaza-ne" rel="nofollow">Contact</a>')
-                .addClass('keyreply-brand')
-                .appendTo(launcher)
-                .click(function(event) {
-                    event.stopPropagation();
-                });
-        }
+ //       if (!whitelabel) {
+  //          var brand = $('<a href="https://www.mammamiapizzeria.ro/#contacteaza-ne" rel="nofollow">Contact</a>')
+   //             .addClass('keyreply-brand')
+   //             .appendTo(launcher)
+   //             .click(function(event) {
+  //                  event.stopPropagation();
+ //               });
+//        }
 
         var ua = navigator.userAgent;
         var iOS = !!ua.match(/iPad/i) || !!ua.match(/iPhone/i);
