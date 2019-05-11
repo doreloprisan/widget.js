@@ -292,8 +292,8 @@
                     var name = site.split('.')[0];
                     var card = "BEGIN:VCARD" +
                         "\nVERSION:3.0" +
-                        "\nN:" + name +
-                        "\nFN:" + name +
+                        "\nN:" + 'Pizzeria' +
+                        "\nFN:" + 'Mamma Mia' +
                         "\nORG:" + site +
                         "\nTEL;TYPE=WORK,VOICE:" + settings.apps.whatsapp +
                         "\nEND:VCARD";
@@ -307,7 +307,7 @@
                     }
 
                     $('<br><span>').text('2: Promotii Whatsapp').appendTo(container);
-                    $('<br><a class="keyreply-button" href="whatsapp://send??phone=40745841851text=Vreau+promotiile+la+pizza">Promotii Whatsapp</a>');
+                    $('<br><a class="keyreply-button" href="whatsapp://send?phone=40745841851text=Vreau+promotiile+la+pizza">Promotii Whatsapp</a>').appendTo(container);
                     qr = true;
                     break;
 
