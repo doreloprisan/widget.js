@@ -102,7 +102,7 @@
             });
 
         if (!whitelabel) {
-            var brand = $('<a href="https://www.mammamiapizzeria.ro/#contacteaza-ne" rel="nofollow"><u>Contact</u></a>')
+            var brand = $('<a href="https://www.mammamiapizzeria.ro/#contacteaza-ne" rel="nofollow">Contact</a>')
                 .addClass('keyreply-brand')
                 .appendTo(launcher)
                 .click(function(event) {
@@ -298,7 +298,7 @@
                         "\nTEL;TYPE=WORK,VOICE:" + settings.apps.whatsapp +
                         "\nEND:VCARD";
 
-                    container.css('color', 'white').css('padding-top', '32px').text("1: Add to Contacts")
+                    container.css('color', 'white').css('padding-top', '32px').text("1: Salveaza contact")
 
                     if (Android) {
                         $('<a target="_blank" class="keyreply-button">').attr('href', "tel:" + settings.apps.whatsapp).text(settings.apps.whatsapp).appendTo(container);
@@ -306,8 +306,8 @@
                         $('<a target="_blank" class="keyreply-button">').attr('rel', 'external').attr('download', name + ".vcf").attr('href', "data:text/directory;base64," + btoa(card)).text(settings.apps.whatsapp).appendTo(container);
                     }
 
-                    $('<br><span>').text('2: Start chat').appendTo(container);
-                    $('<br><a class="keyreply-button" href="whatsapp://send?text=Vreau+promotiile+la+pizza">Promotii Whatsapp</a>').appendTo(container);
+                    $('<br><span>').text('2: Promotii Whatsapp').appendTo(container);
+                    $('<br><a class="keyreply-button" href="whatsapp://send??phone=40745841851text=Vreau+promotiile+la+pizza">Promotii Whatsapp</a>');
                     qr = true;
                     break;
 
