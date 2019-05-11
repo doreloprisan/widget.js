@@ -102,7 +102,7 @@
             });
 
         if (!whitelabel) {
-            var brand = $('<a href="" rel="nofollow"><u>contact</u></a>')
+            var brand = $('<a href="https://www.mammamiapizzeria.ro/#contacteaza-ne" rel="nofollow"><u>Contact</u></a>')
                 .addClass('keyreply-brand')
                 .appendTo(launcher)
                 .click(function(event) {
@@ -307,7 +307,7 @@
                     }
 
                     $('<br><span>').text('2: Start chat').appendTo(container);
-                    $('<br><a class="keyreply-button" href="whatsapp://send?text=Hi">Open Whatsapp</a>').appendTo(container);
+                    $('<br><a class="keyreply-button" href="whatsapp://send?text=Vreau+promotiile+la+pizza">Promotii Whatsapp</a>').appendTo(container);
                     qr = true;
                     break;
 
