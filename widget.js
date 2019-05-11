@@ -289,26 +289,11 @@
                     break;
 
                 case 'whatsapp':
-                    var name = site.split('.')[0];
-                    var card = "BEGIN:VCARD" +
-                        "\nVERSION:3.0" +
-                        "\nN:" + 'Pizzeria' +
-                        "\nFN:" + 'Mamma Mia' +
-                        "\nORG:" + site +
-                        "\nTEL;TYPE=WORK,VOICE:" + settings.apps.whatsapp +
-                        "\nEND:VCARD";
-
-                    container.css('color', 'white').css('padding-top', '32px').text("1: Salveaza contact")
-
-                    if (Android) {
-                        $('<a target="_blank" class="keyreply-button">').attr('href', "tel:" + settings.apps.whatsapp).text(settings.apps.whatsapp).appendTo(container);
-                    } else {
-                        $('<a target="_blank" class="keyreply-button">').attr('rel', 'external').attr('download', name + ".vcf").attr('href', "data:text/directory;base64," + btoa(card)).text(settings.apps.whatsapp).appendTo(container);
-                    }
-
-                    $('<br><span>').text('2: Promotii Whatsapp').appendTo(container);
-                    $('<br><a class="keyreply-button" href="whatsapp://send?phone=40745841851text=Vreau+promotiile+la+pizza">Promotii Whatsapp</a>').appendTo(container);
-                    qr = true;
+                    if (Mobile) {
+                    link = 'whatsapp://send/?phone=' + encodeURIComponent(settings.apps.whatsapp) + '&text=' + encodeURIComponent(settings.message || "Vreau+promotiile+la+pizza")
+                  } else {
+                    link = 'https://web.whatsapp.com/send?phone=' + encodeURIComponent(settings.apps.whatsapp) + '&text=' + encodeURIComponent(settings.message || "Vreau+promotiile+la+pizza")
+                  }
                     break;
 
                 case 'wechat':
