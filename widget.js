@@ -1,11 +1,11 @@
 (function() {
     //Load Stylesheet
-    var root = 'https://doreloprisan.github.io/widget.js';
+    var root = 'https://keyreply.com';
     var head = document.getElementsByTagName('head')[0],
         stylesheet = document.createElement('link');
     stylesheet.type = 'text/css';
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = root + 'widget.css';
+    stylesheet.href = root + '/chat/widget.css';
     head.appendChild(stylesheet);
 
     setTimeout(function() {
@@ -127,7 +127,7 @@
                     .css('background-color', colors[key])
                     .append(
                         $('<img>')
-                        .attr('src', root + key + '.svg')
+                        .attr('src', root + '/chat/images/apps/' + key + '.svg')
                         .attr('alt', key)
                     )
                     .append($('<div class="keyreply-label">').text(key.charAt(0).toUpperCase() + key.slice(1)))
