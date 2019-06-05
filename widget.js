@@ -1,6 +1,6 @@
 (function() {
     //Load Stylesheet
-    var root = 'https://doreloprisan.github.io';
+    var root = 'https://doreloprisan.github.io/widget.js';
     var head = document.getElementsByTagName('head')[0],
         stylesheet = document.createElement('link');
     stylesheet.type = 'text/css';
